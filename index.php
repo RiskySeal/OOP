@@ -6,6 +6,8 @@
  * Time: 9:39
  */
 
+echo "hello";
+
 function test(){
     $items = [];
     $firstName ="";
