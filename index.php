@@ -17,15 +17,9 @@ function test(){
 
     return $firstName;
 
-
-
 }
 
 function test2(){
-
-
-
-
 
 
 }
