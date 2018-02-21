@@ -6,26 +6,30 @@
  * Time: 9:39
  */
 
-echo "hello";
+class Task{
+    public $title;
+    public $description;
 
-function test(){
-    $items = [];
-    $firstName ="";
-    foreach ($items as $item){
-        echo "Test";
+    public $completed = false;
+
+    public function __construct($description)
+    {
+        $this->title;
+        $this->description = $description;
     }
 
-    return $firstName;
-
+    public function complete()
+    {
+        $this->completed = true;
+    }
 }
 
-function test2(){
+$task = new Task('Title', 'Task description');
+$task->complete();
+echo $task->title . ": " . $task->description;
 
-
-}
-
-test2();
-test2();
+echo '<pre>';
+print_r($task);
 
 
 
